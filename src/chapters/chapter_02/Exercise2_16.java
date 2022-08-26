@@ -1,7 +1,5 @@
 package chapters.chapter_02;
 
-import java.util.Scanner;
-
 public class Exercise2_16 {
 
 	public static void main(String[] args) {
