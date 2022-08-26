@@ -1,0 +1,309 @@
+02_03
+	There is no performance difference between a specific import and
+a wildcard import declaration.
+
+02_04
+
+Which of the following identifiers are valid? Which are Java keywords?
+
+() : means valid identifiers
+(miles, Test), a++, ––a, 4#R, ($4), #44, (apps)
+class, public, int, (x, y, radius)
+
+java keyword : class, public, int
+	Which of the following identifiers are valid? Which are Java keywords?
+
+() : means valid identifiers
+(miles, Test), a++, ––a, 4#R, ($4), #44, (apps)
+class, public, int, (x, y, radius)
+
+java keyword : class, public, int
+
+02_05
+
+public class Test {
+2 public static void main(String[] args) {
+3 int i = k + 2;
+4 System.out.println(i); //to fix it we must identify "k"
+
+02_07
+
+What are the benefits of using constants? Declare an int constant SIZE with value 20.
+There are three benefits of using constants:
+(1) you don't have to repeatedly type the same value;
+(2) the value can be changed in a single location, if necessary;
+(3) the program is easy to read.
+final int SIZE = 20;
+
+
+02_08
+
+	What are the naming conventions for class names, method names, constants, and variables? Which of the following items can be a constant, a method, a variable, or a class according to the Java naming conventions?
+MAX_VALUE, Test, read, readDouble
+Class names: Capitalize the first letter in each name.
+Variables and method names: Lowercase the first word, capitalize the first letter in all subsequent words.
+Constants: Capitalize all letters.
+Constant: MAX_VALUE
+Method or variable: read , readDouble
+Class name: Test
+
+02_09
+
+Translate the following algorithm into Java code:
+Step 1: Declare a double variable named miles with initial value 100.
+Step 2: Declare a double constant named KILOMETERS_PER_MILE with value 1.609.
+Step 3: Declare a double variable named kilometers, multiply miles and KILOMETERS_PER_MILE, and assign the result to kilometers.
+Step 4: Display kilometers to the console.
+What is kilometers after Step 4?
+double miles = 100;
+final double KILOMETERS_PER MILE = 1.609;
+double kilometers = KILOMETERS_PER MILE * miles;
+System.out.println(kilometers);
+The value of kilometers is 160.9
+
+02_10
+
+Find the largest and smallest byte, short, int, long, float, and double. Which of these data types requires the least amount of memory?
+For byte, from -128 to 127, inclusive.
+For short, from -32768 to 32767, inclusive.
+For int, from -2147483648 to 2147483647, inclusive.
+For long, from -9223372036854775808 to 9223372036854775807.
+For float, the smallest positive float is 1.40129846432481707e-45 and the largest float is 3.40282346638528860e+38.
+For double, the smallest positive double is 4.94065645841246544e-324 and the largest double is 1.79769313486231570e+308d.
+
+02_11
+
+Show the result of the following remainders.
+
+56 % 6
+78 % -4
+-34 % 5
+-34 % -5
+5 % 1
+1 % 5
+
+2
+2
+-4
+-4
+0
+1
+
+02_12
+
+If today is Tuesday, what will be the day in 100 days?
+100 % 7 = 2. So it is Thursday after 2 days
+
+02_13
+
+What is the result of 25 / 4? How would you rewrite the expression if you wished the result to be a floating-point number?
+25 / 4 is 6. If you want the quotient to be a floating-point number, rewrite it as 25.0 / 4.0, 25.0 / 4, or 25 / 4.0.
+
+02_14
+
+Show the result of the following code:
+System.out.println(2 * (5 / 2 + 5 / 2));
+System.out.println(2 * 5 / 2 + 2 * 5 / 2);
+System.out.println(2 * (5 / 2));
+System.out.println(2 * 5 / 2);
+8
+10
+4
+5
+
+02_15
+
+Are the following statements correct? If so, show the output.
+System.out.println("25 / 4 is " + 25 / 4);
+System.out.println("25 / 4.0 is " + 25 / 4.0);
+System.out.println("3 * 2 / 4 is " + 3 * 2 / 4);
+System.out.println("3.0 * 2 / 4 is " + 3.0 * 2 / 4);
+Yes, the statements are correct. The output is
+25 / 4 is 6
+25 / 4.0 is 6.25
+3 * 2 / 4 is 1
+3.0 * 2 / 4 is 1.5
+
+02_16
+
+Write a statement to display the result of 2 3.5 .
+Math.pow(2, 3.5)
+
+02_17
+
+Suppose m and r are integers. Write a Java expression for mr 2 to obtain a floating-point result.
+1.0 * m * (r * r)
+
+02_18
+
+The double type values are more accurate than the float type values. For example,
+System.out.println("1.0 / 3.0 is " + 1.0 / 3.0);
+binary, octal, and hex literals
+suffix f or F
+suffix d or D
+double vs. float
+displays 1.0 / 3.0 is 0.3333333333333333
+16 digits
+x
+displays 1.0F / 3.0F is 0.33333334
+8 digits
+s
+System.out.println("1.0F / 3.0F is " + 1.0F / 3.0F);
+A float value has 7 to 8 number of significant digits and a double value has 15 to 17 number
+of significant digits.
+
+02_19
+
+Which of the following are correct literals for floating-point numbers?
+
+12.3, 12.3e+2, 23.4e-2, -334.4, 20.5, 39F, 40D
+All can be used as literals for floating-point numbers.
+
+02_20
+
+Which of the following are the same as 52.534?
+
+5.2534e+1, 0.52534e+2, 525.34e-1, 5.2534e+0
+5.2534e+1, 0.52534e+2, 525.34e-1 are the same as 52.534.
+
+02_21
+
+Which of the following are correct literals?
+
+5_2534e+1, _2534, 5_2, 5_
+5_2534e+1, and 5_2, are correct.
+
+02_22
+
+How would you write the following arithmetic expression in Java?
+a.
+b. 5.5 * (r + 2.5) 2.5 + t
+(a) 4.0 / (3 * (r + 34)) - 9.0 * (a + b * c) + (3 + d * (2 + a) )/ (a + b * d)
+(b) 5.5 * Math.pow(r + 2.5, 2.5 + t)
+
+02_23
+
+How do you obtain the current second, minute, and hour?
+long totalMills = System.currentTimeMillis() returns the milliseconds since Jan 1, 1970.
+long totalSeconds = totalMills / 1000 returns the total seconds.
+long totalMinutes = totalSeconds / 60 returns the total minutes.
+totalSeconds % 60 returns the current second.
+totalMinutes % 60 returns the current minute.
+totalMinutes / 60 % 24 returns the current hour.
+
+02_24
+
+Show the output of the following code:
+double a = 6.5;
+a += a + 1;
+System.out.println(a);
+a = 6;
+a /= 2;
+System.out.println(a);
+14.0
+3.0
+Hint: a += a + 1 is a += 6.5 + 1, a += 7.5, a = a + 7.5, a = 6.5 + 7.5. Therefore, a is 14.0.
+
+02_25
+
+Which of these statements are true?
+a. Any expression can be used as a statement.
+b. The expression x++ can be used as a statement.
+c. The statement x = x + 5 is also an expression.
+d. The statement x = y = x = 0 is illegal.
+b and c are true.
+
+02_26
+
+Show the output of the following code:
+int a = 6;
+int b = a++;
+System.out.println(a);
+System.out.println(b);
+a = 6;
+b = ++a;
+System.out.println(a);
+System.out.println(b);
+7
+6
+7
+7
+
+02_27
+
+Can different types of numeric values be used together in a computation?
+Yes. Different types of numeric values can be used in the same computation through numeric conversions referred to as casting.
+
+02_28
+
+Can you perform binary operations with two operands of different types? Yes. If an integer
+and a floating-point number are involved in a binary operation, Java automatically converts
+the integer to a floating-point value. So, 3 * 4.5 is same as 3.0 * 4.5.
+
+02_29
+
+Show the output of the following code:
+float f = 12.5F;
+int i = (int)f;
+System.out.println("f is " + f);
+System.out.println("i is " + i);
+f is 12.5
+i is 12
+
+02_30
+
+If you change (int)(tax * 100) / 100.0 to (int)(tax * 100) / 100 in line 11 in Listing 2.8, what will be the output for the input purchase amount of 197.556?
+The answer is 11
+Here is the reason:
+tax = purchaseAmount * 0.06 = 197.556 * 0.06 = 11.85336
+tax * 100 = 1185.336
+(int)(tax * 100) = 1185
+1185/ 100 = 11
+
+02_31
+
+Show the output of the following code:
+double amount = 5;
+System.out.println(amount / 2);
+System.out.println(5 / 2);
+2.5
+2
+
+02_32
+
+How would you write the following arithmetic expression?
+
+(b + Math.sqrt(b * b - 4 * a * c, 0.5)) / (2 * a)
+
+02_33
+
+Show the output in Listing 2.10 with the input value 1.99.
+Enter an amount in double, for example 11.56: 1.99
+Your amount 1.99 consists of
+    1 dollars
+    3 quarters
+    2 dimes
+    0 nickels
+    4 pennies
+
+02_34
+
+Can you declare a variable as int and later redeclare it as double?
+No.
+
+02_35
+
+What is an integer overflow? Can floating-point operations cause overflow?
+Numbers are stored with a limited numbers of digits. When a variable is assigned a value that is too large (in size) to be stored, it causes overflow. Overflow is for integer operations. Floating-point operations will not cause overflow.
+
+02_36
+
+Will overflow cause a runtime error?
+No.
+
+02_37
+
+What is a round-off error? Can integer operations cause round-off errors? Can floating-point operations cause round-off errors?
+A round-off error, also called a rounding error, is the difference between the calculated approximation of a number and its exact mathematical value. Integer operations will not cause rounding error. Floating-point operations may cause rounding error.
+
+
