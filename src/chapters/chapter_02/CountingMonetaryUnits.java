@@ -31,7 +31,7 @@ public class CountingMonetaryUnits {
 		double pennies = remainingCents_2 % 5;
 		
 		System.out.println("11.56 dollars consist of " + dollars + " dollars " + quarters + " quarters " +
-		 dimes + " dimes " + nickels + "nickels " + pennies + " pennies");
+		 dimes + " dimes " + nickels + " nickels " + pennies + " pennies");
 		
 		
 		
