@@ -1,7 +1,10 @@
 package chapters.chapter_02;
 
+import java.util.Scanner;
+
 public class Exercise2_15 {
 	public static void main(String[]args) {
+		
 		Scanner in = new Scanner(System.in);
 
         System.out.print("Enter x1 and y1: ");
