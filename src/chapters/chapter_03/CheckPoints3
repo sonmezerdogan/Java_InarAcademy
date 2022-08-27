@@ -1,0 +1,82 @@
+03_01
+
+List six relational operators.
+<, <=, ==, !=, >, >=
+
+03_02
+
+Assuming that x is 1, show the result of the following Boolean expressions:
+x > 0
+x < 0
+x != 0
+x >= 0
+x != 1
+true
+false
+true
+true
+false
+
+03_03
+
+boolean b = true;
+i = (int)b;
+
+int i = 1;
+boolean b = (boolean)i;
+No. Boolean values cannot be cast to other types.
+
+03_04
+
+Write an if statement that assigns 1 to x if y is greater than 0.
+
+if (y > 0)
+  x = 1;
+
+03_05
+
+Write an if statement that increases pay by 3% if score is greater than 90.
+if (score > 90)
+  pay *= 1.03;
+
+03_06
+
+What is wrong in the following code?
+if radius >= 0
+{
+  area = radius * radius * PI;
+  System.out.println("The area for the circle of " +
+    " radius " + radius + " is " + area);
+}
+The parentheses is reuqired for the conidition radius >= 0.
+
+03_07
+
+Write an if statement that increases pay by 3% if score is greater than 90, otherwise increases pay by 1%.
+if (score > 90)
+  pay *= 1.03;
+else
+  pay *= 1.01;
+
+03_08
+
+if (number % 2 == 0)
+  System.out.println(number + " is even.");
+else
+  System.out.println(number + " is odd.");
+If number is 30, (a) displays
+30 is even
+30 is odd
+
+(b) displays
+30 is even
+
+If number is 35, (a) displays
+35 is odd
+
+(b) displays
+35 is odd
+
+03_09
+
+
