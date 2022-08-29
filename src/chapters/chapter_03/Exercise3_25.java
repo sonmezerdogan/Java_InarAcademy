@@ -6,9 +6,8 @@ public class Exercise3_25 {
 
 	public static void main(String[] args) {
 
-		Scanner input = new Scanner(System.in);	// Create Scanner object
+		Scanner input = new Scanner(System.in);	
 
-		// Prompt the user to enter four points 
 		System.out.print("Enter x1, y1, x2, y2, x3, y3, x4, y4: ");
 		double x1 = input.nextDouble();
 		double y1 = input.nextDouble();
@@ -18,27 +17,24 @@ public class Exercise3_25 {
 		double y3 = input.nextDouble();
 		double x4 = input.nextDouble();
 		double y4 = input.nextDouble();
+		
+		//if md1 equals to md2; d1 and d2 are parallel
+		
+		double md1 = (y2-y1)/(x2-x1);
+		double md2 = (y4-y3)/(x4-x3);
+		
+		if (md1 == md2) {
+			System.out.println("Two lines are parallel.");
+		}
+		else {
+			double intersectionX= ((md1 * x1) - (md2 * x3) +y3 -y1) / (md1 - md2);
+			double intersectionY= (md1 * (intersectionX - x1) + y1 + md2 *(intersectionX -x3)+y3)/2;
+			
+			System.out.println("The intersection point is: " + intersectionX + " " + intersectionY) ;
+		}
 
-		// Calculate the intersecting point
-		// Get a, b, c, d, e, f
-		double a = y1 - y2;
-		double b = -1 * (x1 - x2);
-		double c = y3 - y4;
-		double d = -1 * (x3 - x4);
-		double e = (y1 - y2) * x1 - (x1 - x2) * y1;
-		double f = (y3 - y4) * x3 - (x3 - x4) * y3;
-
-		// Display results
-		if (a * d - b * c == 0)
-		{
-			System.out.println("The two lines are parallel");
+		
 		}
-		else
-		{
-			double x = (e * d - b * f) / (a * d - b * c);
-			double y = (a * f - e * c) / (a * d - b * c);
-			System.out.println("The intersecting point is at (" + x + ", " + y + ")");
-		}
-		}
+		
 
 }
