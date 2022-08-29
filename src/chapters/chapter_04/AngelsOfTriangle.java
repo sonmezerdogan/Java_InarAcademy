@@ -26,9 +26,9 @@ public class AngelsOfTriangle {
 		double C= Math.toDegrees(Math.acos((c*c-b*b-a*a)/(-2*a*b)));
 		
 		System.out.println("The thre angels of the triangles are :" + 
-				Math.round(A*100/100.0) + " " + 
-				Math.round(B*100/100.0) + " " + 
-				Math.round(C*100/100.0));
+				Math.round(A) + " " + 
+				Math.round(B) + " " + 
+				Math.round(C));
 		
 		
 		
