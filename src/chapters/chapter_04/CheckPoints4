@@ -1,0 +1,305 @@
+4.1
+
+(a) Math.sqrt(4) : 2
+	
+(b) (int)(Math.sin(2 * Math.PI)) : 1
+
+(c) Math.cos(2 * Math.PI)  : 0
+
+(d) Math.pow(2, 2)  :  4
+
+(e) Math.log(Math.E)  :  1.0
+
+(f) Math.exp(1)  :  2.718228
+
+(g) Math.max(2, Math.min(3, 4))  :  3
+
+(h) Math.rint(-2.5)  :  -2
+
+(i) Math.ceil(-2.5)  :  -2
+
+(j) Math.floor(-2.5)  :  -3
+
+(k) Math.round(-2.5f)  :  -2
+
+(l) Math.round(-2.5)  :  -2
+
+(m) Math.rint(2.5)  :  2
+
+(n) Math.ceil(2.5)  :  3
+
+(o) Math.floor(2.5)  :  2
+
+(p) Math.round(2.5f)  . 3
+
+(q) Math.round(2.5)  :  3
+
+(r) Math.round(Math.abs(-2.5))  :  3
+
+
+4.2
+
+true
+
+4.3
+
+double a = Math.toRadians(47)
+
+4.4
+
+double a = Math.toDegrees(Math.PI/7)
+
+4.5
+
+a) 34 + (int)(Math.random() * (55-34))
+b) (int)(Math.random() * 1000)
+c) 5.5 + (Math.random() * (55.5 - 5.5)
+
+4.6
+
+The Math class is in the java.lang package. Any class in the java.lang package is automatically imported. So there is no need to import it explicitly.
+
+4.7
+
+5.5
+5.5
+0.5235987755982988
+0.5235987755982988
+
+4.8
+
+49
+65
+66
+97
+98
+(
+;
+O
+U
+Z
+@
+Z
+q
+r
+z
+
+4.9
+
+'\u345dE' is wrong. It must have exactly four hex numbers in the Unicode.
+
+4.10
+
+int i = '1';
+int j = '1' + '2' * ('4' - '3') + 'b' / 'a';
+int k = 'a';
+char c = 90;
+i is 49, since the ASCII code of '1' is 49.
+j is 100.
+k is 97 since the ASCII code of 'a' is 97.
+c is character 'Z' since (int) 'Z' is 90.
+
+4.11
+
+Can the following conversions involving casting be allowed? If so, find the converted result.
+char c = 'A';
+int i = (int)c;
+
+float f = 1000.34f;
+int i = (int)f;
+
+double d = 1000.34;
+int i = (int)d;
+
+int i = 97;
+char c = (char)i;
+char c = 'A';
+i = (int)c; // i becomes 65
+
+float f = 1000.34f;
+int i = (int)f; // i becomes 1000
+
+double d = 1000.34;
+int i = (int)d; // i becomes 1000
+
+int i = 97;
+char c = (char)i; // c becomes 'a'
+
+4.12
+
+Show the output of the following program:
+public class Test {
+  public static void main(String[] args) {
+    char x = 'a';
+    char y = 'c';
+
+    System.out.println(++x);
+    System.out.println(y++);
+    System.out.println(x - y);
+  }
+}
+b
+c
+-2
+
+4.13
+
+Show the output of the following statements:
+System.out.println('a' < 'b');
+System.out.println('a' <= 'A');
+System.out.println('a' > 'b');
+System.out.println('a' >= 'A');
+System.out.println('a' == 'a');
+System.out.println('a' != 'b');
+true
+false
+false
+true
+true
+true
+
+4.14
+
+Suppose that s1, s2, and s3 are three strings, given as follows:
+String s1 = "Welcome to Java";
+String s2 =  "Programming is fun";
+String s3 =  "Welcome to Java";
+What are the results of the following expressions?
+a.	s1 == s2
+b.	s2 == s3
+c.	s1.equals(s2)
+d.	s1.equals(s3)
+e.	s1.compareTo(s2)
+f.	s2.compareTo(s3)
+g.	s2.compareTo(s2)
+h.	s1.charAt(0)
+i.	s1.indexOf('j')
+j.	s1.indexOf("to")
+k.	s1.lastIndexOf('a')
+l.	s1.lastIndexOf("o", 15)
+m.	s1.length()
+n.	s1.substring(5)
+o.	s1.substring(5, 11)
+p.	s1.startsWith("Wel")
+q.	s1.endsWith("Java")
+r.	s1.toLowerCase()
+s.	s1.toUpperCase()
+t.	s1.concat(s2)
+u.	s1.contains(s2)
+v.	"\t Wel \t".trim()
+a. false
+b. false
+c. false
+d. true
+e. a positive number
+f. a negative number
+g. 0
+h. W
+i. -1
+j. 8
+k. 14
+l. 9
+m. 15
+n. me to Java
+o. me to
+p. true
+q. true
+r. welcome to java
+s. WELCOME TO JAVA
+t. Welcome to JavaProgramming is fun
+u. false
+v. Wel
+
+4.15
+
+Show the output of the following statements (write a program to verify your results):
+System.out.println("1" + 1);
+System.out.println('1' + 1);
+System.out.println("1" + 1 + 1);
+System.out.println("1" + (1 + 1));
+System.out.println('1' + 1 + 1);
+System.out.println("1" + 1);  => 11
+System.out.println('1' + 1);  => 50 
+// (since the Unicode for 1 is 49
+System.out.println("1" + 1 + 1);  => 111
+System.out.println("1" + (1 + 1)); => 12
+System.out.println('1' + 1 + 1); => 51
+
+4.16
+
+Evaluate the following expressions (write a program to verify your results):
+1 + "Welcome " + 1 + 1
+1 + "Welcome " + (1 + 1)
+1 + "Welcome " + ('\u0001' + 1)
+1 + "Welcome " + 'a' + 1
+1 + "Welcome " + 1 + 1 is 1Welcome 11.
+1 + "Welcome " + (1 + 1) is 1Welcome 2.
+1 + "Welcome " + ('\u0001'  + 1) is 1Welcome 2
+1 + "Welcome " + 'a'  + 1 is 1Welcome a1
+
+4.17
+
+Let s1 be " Welcome " and s2 be " welcome ". Write the code for the following statements:
+a. Check whether s1 is equal to s2 and assign the result to a Boolean variable isEqual.
+b. Check whether s1 is equal to s2, ignoring case, and assign the result to a Boolean variable isEqual.
+c. Compare s1 with s2 and assign the result to an int variable x.
+d. Compare s1 with s2, ignoring case, and assign the result to an int variable x.
+e. Check whether s1 has the prefix AAA and assign the result to a Boolean variable b.
+f. Check whether s1 has the suffix AAA and assign the result to a Boolean variable b.
+g. Assign the length of s1 to an int variable x.
+h. Assign the first character of s1 to a char variable x.
+i. Create a new string s3 that combines s1 with s2.
+j. Create a substring of s1 starting from index 1.
+k. Create a substring of s1 from index 1 to index 4.
+l. Create a new string s3 that converts s1 to lowercase.
+m. Create a new string s3 that converts s1 to uppercase.
+n. Create a new string s3 that trims whitespaces on both ends of s1.
+o. Assign the index of the first occurrence of the character e in s1 to an int variable x.
+p. Assign the index of the last occurrence of the string abc in s1 to an int variable x.
+(a) boolean isEqual = s1.equals(s2);
+(b) boolean isEqual = s1.equalsIgnoreCase(s2);
+(c) int x = s1.compareTo(s2);
+(d) int x = s1.compareToIgnoreCase(s2);
+(e) boolean b = s1.startsWith("AAA");
+(f) boolean b = s1.endsWith("AAA");
+(g) int x = s1.length();
+(h) char x = s1.charAt(0);
+(i) String s3 = s1 + s2;
+(j) String s3 = s1.substring(1);
+(k) String s3 = s1.substring(1, 5);
+(l) String s3 = s1.toLowerCase();
+(m) String s3 = s1.toUpperCase();
+(n) String s3 = s1.trim();
+(o) int x = s1.indexOf('e');
+(p) int x = s1.lastIndexOf("abc");
+
+4.18
+
+(i + "").length()
+
+4.19
+
+(d + "").length()
+
+4.20
+
+What is wrong in the following code?
+import java.util.Scanner;
+
+public class Test {
+  public static void main(String[] args) {       
+    Scanner input = new Scanner(System.in);
+    System.out.print("Enter an integer: ");
+    int value = input.nextInt();
+    System.out.println("The value is " + value);
+
+    System.out.print("Enter a line: ");
+    String line = input.nextLine();
+    System.out.println("The line is " + line);
+  }
+}            
+input.nextLine() is used after input.nextInt(). Don't use a line-beased input after a token-based input.
+
+4.21
+
+
