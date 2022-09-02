@@ -37,8 +37,7 @@ public class SubString {
 		System.out.println("Welcome to Java".lastIndexOf("Java", 5));
 		System.out.println("Welcome to Java".lastIndexOf("Java"));
 		
-		String name= "Kim Jones";
-		System.out.println(name.substring("0,K"));
+		
 		
 	}
 

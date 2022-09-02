@@ -1,10 +1,14 @@
 package chapters.chapter_04;
 
+import java.util.Scanner;
+
 public class compareStrings {
 
 	public static void main(String[] args) {
 
-		String str="Welcome";
+		Scanner input=new Scanner(System.in);
+		System.out.println("Enter a letter :");
+		String str="abc";
 		System.out.println(str.startsWith("we"));
 		System.out.println(str.endsWith("me"));
 		System.out.println(str.contains("co"));
